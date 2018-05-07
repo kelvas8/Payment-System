@@ -1,6 +1,6 @@
 package by.epam.task4.dao.interfaces;
 
-import by.epam.task4.properties.Account;
+import by.epam.task4.entity.Account;
 
 public interface IAccountsDAO {
 

@@ -5,13 +5,10 @@ import by.epam.task4.dao.jdbc.CardsDAO;
 import by.epam.task4.dao.jdbc.ClientsDAO;
 import by.epam.task4.dao.jdbc.TransactionsDAO;
 
-import java.sql.Connection;
 
 public class MySqlDAOFactory extends DAOFactory {
 
-    public static Connection createConnection() {
 
-    }
 
 
 

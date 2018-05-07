@@ -1,6 +1,6 @@
 package by.epam.task4.dao.interfaces;
 
-import by.epam.task4.properties.Transaction;
+import by.epam.task4.entity.Transaction;
 
 public interface ITransactionsDAO {
 
