@@ -1,7 +1,7 @@
-package by.epam.task4.dao.jdbc;
+package by.epam.task4.java.dao.jdbc;
 
-import by.epam.task4.dao.interfaces.ITransactionsDAO;
-import by.epam.task4.entity.Transaction;
+import by.epam.task4.java.dao.interfaces.ITransactionsDAO;
+import by.epam.task4.java.entity.Transaction;
 
 public class TransactionsDAO implements ITransactionsDAO {
     @Override

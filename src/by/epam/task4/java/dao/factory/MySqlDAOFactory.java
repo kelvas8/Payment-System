@@ -1,9 +1,9 @@
-package by.epam.task4.dao.factory;
+package by.epam.task4.java.dao.factory;
 
-import by.epam.task4.dao.jdbc.AccountsDAO;
-import by.epam.task4.dao.jdbc.CardsDAO;
-import by.epam.task4.dao.jdbc.ClientsDAO;
-import by.epam.task4.dao.jdbc.TransactionsDAO;
+import by.epam.task4.java.dao.jdbc.AccountsDAO;
+import by.epam.task4.java.dao.jdbc.CardsDAO;
+import by.epam.task4.java.dao.jdbc.ClientsDAO;
+import by.epam.task4.java.dao.jdbc.TransactionsDAO;
 
 
 public class MySqlDAOFactory extends DAOFactory {

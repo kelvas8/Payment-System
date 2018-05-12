@@ -1,9 +1,9 @@
-package by.epam.task4.dao.jdbc;
+package by.epam.task4.java.dao.jdbc;
 
 
-import by.epam.task4.dao.interfaces.IClientsDAO;
-import by.epam.task4.dao.resources.PoolConnection;
-import by.epam.task4.entity.Client;
+import by.epam.task4.java.dao.interfaces.IClientsDAO;
+import by.epam.task4.java.dao.connection.PoolConnection;
+import by.epam.task4.java.entity.Client;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -12,12 +12,12 @@ import java.sql.SQLException;
 public class ClientsDAO implements IClientsDAO {
 
     protected Connection connect;
-    private final static String SQL_INSERT = "INSERT INTO clients (id, name, patronymic, surname, birthday) VALUES (?,?,?,?,?)";
+    private final static String SQL_INSERT = "INSERT INTO clients (name, patronymic, surname, birthday) VALUES (?,?,?,?)";
 
 
     public ClientsDAO() {
-        connect = (Connection) PoolConnection.getInsert();
-
+        connect = (Connection) PoolConnection.getConnection();
+        System.out.println("succefull");
     }
 
 
@@ -25,10 +25,10 @@ public class ClientsDAO implements IClientsDAO {
     public boolean insertClient(PreparedStatement ps, Client client) {
         boolean flag = false;
         try {
-            ps.setString(2, "Pop");
-            ps.setString(3, "Opa");
-            ps.setString(4, "Insdef");
-            ps.setInt(5, 1);
+            ps.setString(1, "Pop");
+            ps.setString(2, "Opa");
+            ps.setString(3, "Insdef");
+            ps.setDate(4, java.sql.Date.valueOf("2000-11-01"));
             ps.executeUpdate();
             flag = true;
         } catch (SQLException e) {

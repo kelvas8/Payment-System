@@ -1,6 +1,6 @@
-package by.epam.task4.dao.interfaces;
+package by.epam.task4.java.dao.interfaces;
 
-import by.epam.task4.entity.Account;
+import by.epam.task4.java.entity.Account;
 
 public interface IAccountsDAO {
 

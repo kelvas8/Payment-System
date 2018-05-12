@@ -1,9 +1,8 @@
-package by.epam.task4;
+package by.epam.task4.java;
 
-import by.epam.task4.dao.factory.DAOFactory;
-import by.epam.task4.dao.interfaces.IClientsDAO;
-import by.epam.task4.entity.Client;
-
+import by.epam.task4.java.dao.factory.DAOFactory;
+import by.epam.task4.java.dao.interfaces.IClientsDAO;
+import by.epam.task4.java.entity.Client;
 import java.sql.PreparedStatement;
 import java.util.ArrayList;
 

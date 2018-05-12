@@ -1,7 +1,7 @@
-package by.epam.task4.dao.jdbc;
+package by.epam.task4.java.dao.jdbc;
 
-import by.epam.task4.dao.interfaces.IAccountsDAO;
-import by.epam.task4.entity.Account;
+import by.epam.task4.java.dao.interfaces.IAccountsDAO;
+import by.epam.task4.java.entity.Account;
 
 public class AccountsDAO implements IAccountsDAO {
     @Override

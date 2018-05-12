@@ -1,7 +1,7 @@
-package by.epam.task4.dao.interfaces;
+package by.epam.task4.java.dao.interfaces;
 
 
-import by.epam.task4.entity.Client;
+import by.epam.task4.java.entity.Client;
 
 import java.sql.PreparedStatement;
 

@@ -1,7 +1,7 @@
-package by.epam.task4.dao.jdbc;
+package by.epam.task4.java.dao.jdbc;
 
-import by.epam.task4.dao.interfaces.ICardsDAO;
-import by.epam.task4.entity.Card;
+import by.epam.task4.java.dao.interfaces.ICardsDAO;
+import by.epam.task4.java.entity.Card;
 
 public class CardsDAO implements ICardsDAO {
     @Override
